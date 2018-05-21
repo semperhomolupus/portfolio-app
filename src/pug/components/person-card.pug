@@ -1,0 +1,33 @@
+.person-card
+  .person-card__front
+    include author
+    include socials
+    ul.person-card__nav
+      li.person-card__nav-item
+        a(href="works.html").button.person-card__nav-link
+      li.person-card__nav-item
+        a(href="about.html").button.person-card__nav-link
+      li.person-card__nav-item
+        a(href="blog.html").button.person-card__nav-link
+  .person-card__back
+    b.person-card__title Авторизуйтесь
+    form(action="#" method="POST").person-card__form
+      input(type="text").person-card__login
+      input(type="password").person-card__password
+      div.person-card__questions
+        label.person-card__alive
+          input(type="checkbox").person-card__hidden-checkbox
+          i.person-card__custom-checkbox 
+          span.person-card__text Я человек
+        b.person-card__robot
+        label.person-card__robot-yes
+          input(type="radio" name="robot").person-card__hidden-radio
+          i.person-card__custom-radio 
+          span.person-card__text Да
+        label.person-card__robot-no
+          input(type="radio" name="robot").person-card__hidden-radio
+          i.person-card__custom-radio 
+          span.person-card__text Не уверен
+      .person-card__buttons
+        button(type="reset").button.person-card__reset На главную
+        button(type="submit").button.person-card__submit Войти

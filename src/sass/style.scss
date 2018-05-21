@@ -1,2 +1,7 @@
 @import "template/_base";
+// Pages
 @import "pages/index";
+//Blocks
+@import "components/author";
+@import "components/person-card";
+@import "components/socials";

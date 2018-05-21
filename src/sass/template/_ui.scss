@@ -6,4 +6,52 @@
   &:hover {}
   &:focus {}
   &:active {}
+  &--round {
+    border-radius: 25%;
+  }
+  &--round-transparent {
+    border-radius: 25%;
+  }
+}
+
+input[type="text"],
+input[type="password"] {
+  display: inline-block;
+  vertical-align: top;
+}
+
+input[type="checkbox"]+i {
+  display: inline-block;
+  vertical-align: top;
+}
+
+input[type="checkbox"]:checked+i {
+  display: inline-block;
+  vertical-align: top;
+}
+
+input[type="radio"]+i {
+  display: inline-block;
+  vertical-align: top;
+}
+
+input[type="radio"]:checked+i {
+  display: inline-block;
+  vertical-align: top;
+}
+
+h1 {
+  display: block;
+}
+
+h2 {
+  display: block;
+}
+
+h3 {
+  display: block;
+}
+
+p {
+  display: block;
 }

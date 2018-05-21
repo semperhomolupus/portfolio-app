@@ -1,0 +1,18 @@
+.socials {
+  display: block;
+}
+
+.socials__list {
+  display: block;
+}
+
+.socials__item {
+  display: block;
+}
+
+.socials__link {
+  display: block;
+  &--vk {}
+  &--github {}
+  &--in {}
+}
