@@ -45,5 +45,7 @@
     "merge-stream": "^1.0.1",
     "prettier": "^1.12.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
 }
