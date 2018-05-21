@@ -1,0 +1,29 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/welcome-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome__auth {
+  display: block;
+}
+
+.welcome__footer {
+  display: block;
+  color: $white;
+}
+
+.welcome__footer-name {
+  display: block;
+}
+
+.welcome__footer-copyright {
+  display: block;
+}
