@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+
+  block vars
+
+  include _head
+
+  include ../mixins/_svg-sprite
+
+  body
+
+  .wrapper
+    
+    block content
+
+
+  block scripts
+
+  // SVG-sprite
+  .svg-sprite(style="display: none") 
+    //- ↓↓↓↓↓↓↓ Разкоммитить при подключении svg-спрайита ↓↓↓↓↓↓↓
+    //- include ../../../build/img/symbol/svg-sprite.svg
