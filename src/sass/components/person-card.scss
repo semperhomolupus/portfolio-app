@@ -1,16 +1,24 @@
 .person-card {
   display: block;
   width: 300px;
-  min-height: 395px;
   text-align: center;
   background-color: rgba(#122620, 0.6);
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  overflow: hidden;
   color: $white;
   font-family: $font-basic;
+  @media all and (min-width: $screen-sm) {
+    width: 350px;
+  }
+  @media all and (min-width: $screen-md) {
+    width: 380px;
+  }
 }
 
 .person-card__side {
   display: block;
-  padding-top: 40px;
+  padding-top: 35px;
   &--hidden {
     display: none;
   }
@@ -182,4 +190,5 @@
 .person-card__submit {
   display: block;
   flex-grow: 1;
+  font-weight: 500;
 }
