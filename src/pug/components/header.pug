@@ -1,1 +1,22 @@
 header.header
+  .header__top
+    .header__socials
+      include socials
+      +socials("socials--white")
+    button(type="button").header__burger#js-header-burger
+      +svg("hamburger")
+    .header__menu
+      button(type="button").header__menu-close
+      ul.header__menu-list
+        li.header__menu-item
+          a(href="#").page-title.header__menu-link.header__menu-link--active Мои работы
+        li.header__menu-item
+          a(href="#").page-title.header__menu-link Блог
+        li.header__menu-item
+          a(href="#").page-title.header__menu-link Обо мне
+        li.header__menu-item
+          a(href="#").page-title.header__menu-link Авторизация
+  .header__author
+    include author
+  a(href="#").header__read-more
+    +svg("arrow_down")

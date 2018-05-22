@@ -1,5 +1,8 @@
 .socials {
   display: block;
+  &--white .socials__link {
+    fill: $white;
+  }
 }
 
 .socials__list {
