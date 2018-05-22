@@ -2,94 +2,184 @@
   display: block;
   width: 300px;
   min-height: 395px;
-  padding-top: 40px;
   text-align: center;
-  background-color: rgba(#122620, 0.4);
+  background-color: rgba(#122620, 0.6);
+  color: $white;
+  font-family: $font-basic;
 }
 
 .person-card__side {
   display: block;
+  padding-top: 40px;
   &--hidden {
     display: none;
   }
 }
 
-.person-card__nav {
+.person-card__author {
   display: block;
+  margin-bottom: 35px;
+}
+
+.person-card__socials {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.person-card__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0;
 }
 
 .person-card__nav-item {
   display: block;
+  flex-grow: 1;
+  &:not(:last-child) {
+    border-right: 2px solid #dee3e7;
+  }
 }
 
 .person-card__nav-link {
   display: block;
+  width: 100%;
 }
 
 .person-card__title {
   display: block;
+  margin-bottom: 30px;
 }
 
 .person-card__form {
   display: block;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.person-card__login {
+.person-card__label {
   display: block;
+  position: relative;
+  width: 100%;
 }
 
-.person-card__password {
+.person-card__input-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #f0efe9;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.svg-sprite-login,
+.svg-sprite-password {
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 16px;
+  width: 15px;
+  height: 17px;
+  fill: #c4cbcd;
+}
+
+.svg-sprite-password {
+  width: 18px;
+  height: 17px;
+}
+
+.person-card__input {
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 65px;
 }
 
 .person-card__questions {
   display: block;
+  margin-bottom: 40px;
 }
 
 .person-card__alive {
   display: block;
+  margin-bottom: 20px;
+}
+
+.person-card__robot {
+  color: $white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.81px;
 }
 
 .person-card__hidden-checkbox {
-  display: block;
+  display: none;
 }
 
 .person-card__custom-checkbox {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .person-card__text {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 9px;
+  color: $white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .person-card__robot {
   display: block;
+  margin-bottom: 12px;
 }
 
 .person-card__robot-yes {
-  display: block;
-}
-
-.person-card__hidden-radio {
-  display: block;
-}
-
-.person-card__custom-radio {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
 }
 
 .person-card__robot-no {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-left: 40px;
+}
+
+.person-card__hidden-radio {
+  display: none;
+}
+
+.person-card__custom-radio {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .person-card__buttons {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: -20px;
+  margin-right: -20px;
+  &:hover {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }
 
 .person-card__reset {
   display: block;
+  flex-grow: 1;
+  border-right: 2px solid #dee3e7;
 }
 
 .person-card__submit {
   display: block;
+  flex-grow: 1;
 }

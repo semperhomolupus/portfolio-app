@@ -1,7 +1,9 @@
 .person-card
-  .person-card__side
-    include author
-    include socials
+  .person-card__side.person-card__side--hidden
+    .person-card__author
+      include author
+    .person-card__socials
+      include socials
     ul.person-card__nav
       li.person-card__nav-item
         a(href="works.html").button.person-card__nav-link Мои работы
@@ -9,17 +11,23 @@
         a(href="about.html").button.person-card__nav-link Обо мне
       li.person-card__nav-item
         a(href="blog.html").button.person-card__nav-link Блог
-  .person-card__side.person-card__side--hidden
-    b.person-card__title Авторизуйтесь
+  .person-card__side
+    b.page-title.page-title--white-underline.person-card__title Авторизуйтесь
     form(action="#" method="POST").person-card__form
-      input(type="text").person-card__login
-      input(type="password").person-card__password
+      label.person-card__label
+        i.person-card__input-icon
+          +svg("login")
+        input(type="text" placeholder="Логин").input.person-card__input
+      label.person-card__label
+        i.person-card__input-icon
+          +svg("password")
+        input(type="password" placeholder="Пароль").input.person-card__input
       div.person-card__questions
         label.person-card__alive
           input(type="checkbox").person-card__hidden-checkbox
           i.person-card__custom-checkbox 
           span.person-card__text Я человек
-        b.person-card__robot
+        b.person-card__robot Вы точно не робот?
         label.person-card__robot-yes
           input(type="radio" name="robot").person-card__hidden-radio
           i.person-card__custom-radio 

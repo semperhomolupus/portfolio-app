@@ -53,10 +53,7 @@ a {
   }
 }
 
-button,
-button:focus,
-button:hover,
-button:active {
+button {
   color: inherit;
   border: none;
   outline: none;
@@ -65,6 +62,15 @@ button:active {
   cursor: pointer;
   background: none;
   transition: 0.2s;
+  &:hover {
+    color: inherit;
+  }
+  &:active {
+    color: inherit;
+  }
+  &:focus {
+    color: inherit;
+  }
 }
 
 ul {
