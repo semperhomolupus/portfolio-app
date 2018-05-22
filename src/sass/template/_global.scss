@@ -41,6 +41,7 @@ a {
   outline: none;
   margin: 0;
   padding: 0;
+  transition: 0.2s;
   &:hover {
     color: inherit;
   }
@@ -63,6 +64,7 @@ button:active {
   padding: 0;
   cursor: pointer;
   background: none;
+  transition: 0.2s;
 }
 
 ul {
