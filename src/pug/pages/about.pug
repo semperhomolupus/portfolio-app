@@ -4,4 +4,19 @@ block vars
   - var title = "Обо мне";
 
 
-block content 
+block content
+
+  .about
+    .about__info
+      h2.page-title.about__title
+      .about__content
+        img(src="../img/content/author.jpeg", alt="Егор Дьяченко").about__photo
+        h3.page-subtitle.about__subtitle
+        p.about__text
+        p.about__text
+    .about__skills
+      h3.page-subtitle.about__subtitle
+      p.about__text
+      include ../components/skills
+    .about__map
+      .about__contacts
