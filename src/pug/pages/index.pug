@@ -2,19 +2,19 @@
 html(lang="en")
   - var title = "Главная";
   include ../template/_head
-
+  include ../mixins/_svg-sprite
   body
     .wrapper
       div.content
 
         .welcome
             .welcome__auth
-              button(type="button").button.button--transparent#js-auth-btn Авторизоваться
+              button(type="button").button.button--round-transparent#js-auth-btn Авторизоваться
             include ../components/person-card
             .welcome__footer 
               span.welcome__footer-name © Егор Дьяченко 
               span.welcome__footer-copyright создано с любовью в LoftSchool | 2018
 
-    include ../mixins/_svg-sprite
+    
     .svg-sprite(style="display: none") 
-      //- include ../../../build/img/symbol/svg-sprite.svg
+      include ../../../build/img/symbol/svg-sprite.svg

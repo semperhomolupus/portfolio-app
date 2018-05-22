@@ -3,14 +3,21 @@
 // 
 // Пример
 .button {
+  font-family: $font-basic;
   &:hover {}
   &:focus {}
   &:active {}
   &--round {
-    border-radius: 25%;
+    border-radius: 20px;
   }
   &--round-transparent {
-    border-radius: 25%;
+    border-radius: 20px;
+    padding: 7px 20px;
+    border: 1px solid $white;
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
   }
 }
 

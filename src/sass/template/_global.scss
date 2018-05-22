@@ -34,16 +34,22 @@ body {
   flex: 1;
 }
 
-a,
-a:focus,
-a:hover,
-a:active {
+a {
   font: inherit;
   color: inherit;
   border: none;
   outline: none;
   margin: 0;
   padding: 0;
+  &:hover {
+    color: inherit;
+  }
+  &:active {
+    color: inherit;
+  }
+  &:focus {
+    color: inherit;
+  }
 }
 
 button,

@@ -1,9 +1,17 @@
 .person-card {
   display: block;
+  width: 300px;
+  min-height: 395px;
+  padding-top: 40px;
+  text-align: center;
+  background-color: rgba(#122620, 0.4);
 }
 
-.person-card__front {
+.person-card__side {
   display: block;
+  &--hidden {
+    display: none;
+  }
 }
 
 .person-card__nav {
@@ -15,10 +23,6 @@
 }
 
 .person-card__nav-link {
-  display: block;
-}
-
-.person-card__back {
   display: block;
 }
 

@@ -1,15 +1,15 @@
 .person-card
-  .person-card__front
+  .person-card__side
     include author
     include socials
     ul.person-card__nav
       li.person-card__nav-item
-        a(href="works.html").button.person-card__nav-link
+        a(href="works.html").button.person-card__nav-link Мои работы
       li.person-card__nav-item
-        a(href="about.html").button.person-card__nav-link
+        a(href="about.html").button.person-card__nav-link Обо мне
       li.person-card__nav-item
-        a(href="blog.html").button.person-card__nav-link
-  .person-card__back
+        a(href="blog.html").button.person-card__nav-link Блог
+  .person-card__side.person-card__side--hidden
     b.person-card__title Авторизуйтесь
     form(action="#" method="POST").person-card__form
       input(type="text").person-card__login
