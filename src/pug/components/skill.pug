@@ -1,0 +1,6 @@
+mixin skill (skillName, percent)
+  .skill
+    svg.skill__svg(class="skill__svg--"+percent)
+      circle.skill__svg-back(r="43" cx="50%" cy="50%")
+      circle.skill__svg-front(r="43" cx="50%" cy="50%")
+    span.skill__name #{skillName}

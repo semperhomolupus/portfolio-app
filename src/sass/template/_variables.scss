@@ -3,18 +3,35 @@
 $white: #ffffff;
 $black: #000000;
 //
-$color1: $white;
-$color2: $white;
-$color3: $white;
-$color4: $white;
-$color5: $white;
+$color1: #6c9c5a;
+$color2: #4e8839;
+$color3: #393e42;
+$color4: #373e42;
+$color5: #7e9b5c;
+$color6: #566358;
+$color7: #5f5a55;
+//
+$bg-color1: #fcfcfc;
+$bg-color2:#ebefe2;
+$bg-color3: #f4f5f0;
+$bg-color4: #373e42;
+// svg-sicrcle
+$svg-color1: #aac6a9;
+$svg-color2: #a2c3a3;
+$svg-color3: #8cb990;
+$svg-color4: #6dad77;
+$svg-color5: #52a161;
+$svg-color6: $color1;
 //
 // ################ COLORS END ################
 // ################ FONTS START ################
 //
-$font-basic: Arial,
+$font-basic: Roboto,
+Arial,
 sans-serif;
-$font1: $font-basic;
+$font1: "Sansus Webissimo",
+Arial,
+sans-serif;
 $font2: $font-basic;
 $font3: $font-basic;
 //
@@ -27,8 +44,8 @@ $line-height: 1.2;
 //
 $screen-xs: 320px;
 $screen-sm: 768px;
-$screen-md: 1024px;
-$screen-lg: 1366px;
+$screen-md: 1200px;
+$screen-lg: 1800px;
 //
 // ################ ADAPTIVE END ################
 // ################ OTHER START ################

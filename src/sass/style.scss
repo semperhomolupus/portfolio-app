@@ -1,2 +1,13 @@
 @import "template/_base";
+// Pages
 @import "pages/index";
+@import "pages/about";
+// Blocks
+@import "components/header";
+@import "components/footer";
+@import "components/burger-menu";
+@import "components/author";
+@import "components/person-card";
+@import "components/socials";
+@import "components/skills";
+@import "components/skill";

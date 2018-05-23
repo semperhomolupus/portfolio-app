@@ -1,0 +1,47 @@
+.socials {
+  display: block;
+  &--white .socials__link {
+    fill: $white;
+  }
+}
+
+.socials__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__item {
+  display: inline-block;
+  vertical-align: top;
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.socials__link {
+  display: block;
+  font-size: 0;
+  fill: rgba(#fff, 0.5);
+  &:hover {
+    fill: $color2;
+  }
+}
+
+.svg-sprite-vk {
+  width: 31px;
+  height: 17px;
+  margin-top: 4px;
+}
+
+.svg-sprite-github {
+  width: 26px;
+  height: 22px;
+  margin-top: 2px;
+}
+
+.svg-sprite-in {
+  width: 24px;
+  height: 22px;
+}

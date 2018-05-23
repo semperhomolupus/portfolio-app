@@ -1,0 +1,51 @@
+.author {
+  display: block;
+  font-family: $font-basic;
+  text-align: center;
+}
+
+.author__img {
+  display: inline-block;
+  vertical-align: top;
+  width: 141px;
+  height: 141px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.author__name {
+  display: block;
+  color: $white;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 28px;
+  @media all and (min-width: $screen-sm) {
+    margin-bottom: 5px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+  }
+  @media all and (min-width: $screen-md) {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+  }
+  @media all and (min-width: $screen-lg) {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 41px;
+  }
+}
+
+.author__status {
+  display: block;
+  color: $white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  @media all and (min-width: $screen-sm) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

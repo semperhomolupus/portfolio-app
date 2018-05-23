@@ -1,6 +1,7 @@
 // Border-box на html и все остальные элементы наследуют свойство.
 // Позволяет добавить элемент с другим box-sizing.
 html {
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -11,6 +12,7 @@ html {
 }
 
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   line-height: $line-height;
@@ -23,35 +25,54 @@ body {
 // Прижимаем футер
 .wrapper {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-width: 320px;
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .content {
   flex: 1;
 }
 
-a,
-a:focus,
-a:hover,
-a:active {
+a {
+  font: inherit;
   color: inherit;
   border: none;
   outline: none;
   margin: 0;
   padding: 0;
+  transition: 0.2s;
+  &:hover {
+    color: inherit;
+  }
+  &:active {
+    color: inherit;
+  }
+  &:focus {
+    color: inherit;
+  }
 }
 
-button,
-button:focus,
-button:hover,
-button:active {
+button {
   color: inherit;
   border: none;
   outline: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
+  background: none;
+  transition: 0.2s;
+  &:hover {
+    color: inherit;
+  }
+  &:active {
+    color: inherit;
+  }
+  &:focus {
+    color: inherit;
+  }
 }
 
 ul {

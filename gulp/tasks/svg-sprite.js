@@ -1,6 +1,6 @@
-module.exports = function() {
+module.exports = function () {
   const p = global.p;
-  p.gulp.task("svg-sprite", function() {
+  p.gulp.task("svg-sprite", function () {
     const config = {
       mode: {
         symbol: {
@@ -26,7 +26,7 @@ module.exports = function() {
       )
       .pipe(
         p.gp.cheerio({
-          run: function(elem) {
+          run: function (elem) {
             elem("[fill]").removeAttr("fill");
             elem("[stroke]").removeAttr("stroke");
             elem("[style]").removeAttr("style");
@@ -39,6 +39,7 @@ module.exports = function() {
       )
       .pipe(p.gp.replace("&gt;", ">"))
       .pipe(p.gp.svgSprite(config))
+      .pipe(p.gp.replace("viewBox", "viewbox"))
       .pipe(p.gulp.dest(p.paths.build.spriteSVG));
   });
 };

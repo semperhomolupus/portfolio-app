@@ -1,0 +1,29 @@
+footer.footer
+    .footer__info
+      .footer__content
+        section.footer__descr
+          p.footer__text Вы можете связаться со мной любым удобным вам способом, мне нравится email.
+        section.footer__nav
+          ul.footer__nav-list
+            li.footer__nav-item
+              a(href="works.html").footer__nav-link Мои работы
+            li.footer__nav-item
+              a(href="about.html").footer__nav-link Обо мне
+            li.footer__nav-item
+              a(href="blog.html").footer__nav-link Блог
+            li.footer__nav-item
+              a(href="index.html").footer__nav-link Авторизация
+          .footer__socials
+            include socials
+            +socials("socials--white")
+        section.footer__quote
+          p.footer__text
+            em It is an heretic that makes the fire, Not she which burns in't.
+            br
+            em 
+              b — William Shakespeare
+    .footer__copyright
+      .container
+        p.footer__text
+          span.footer__copyright-name © Егор Дьяченко 
+          span.footer__copyright-descr Макет предоставлен LoftSchool | 2018
