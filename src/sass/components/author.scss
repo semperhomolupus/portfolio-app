@@ -30,6 +30,11 @@
     font-weight: 500;
     line-height: 34px;
   }
+  @media all and (min-width: $screen-lg) {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 41px;
+  }
 }
 
 .author__status {

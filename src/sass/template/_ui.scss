@@ -1,13 +1,5 @@
 // Индивидуальные базовые стили для конкретного проекта в соответствии
 // с его UI-китом.
-.container {
-  min-width: 320px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 1px;
-  padding-top: 1px;
-}
-
 .button {
   padding: 15px;
   color: $white;
@@ -114,6 +106,24 @@
       background-color: $color4;
     }
   }
+  @media all and (min-width: $screen-sm) {
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 52px;
+    text-transform: uppercase;
+    letter-spacing: 1.22px;
+    &--black-underline {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+  }
+  @media all and (min-width: $screen-md) {
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 66px;
+    text-transform: uppercase;
+    letter-spacing: 1.57px;
+  }
 }
 
 .page-subtitle {
@@ -142,6 +152,23 @@
       background-color: $color3;
     }
   }
+  @media all and (min-width: $screen-sm) {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    &--black-underline {
+      &::after {
+        width: 90px;
+        margin-left: -45px;
+      }
+    }
+  }
+  @media all and (min-width: $screen-md) {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 41.05px;
+    text-transform: uppercase;
+  }
 }
 
 .page-text {
@@ -157,6 +184,11 @@
     text-decoration: none;
     font-weight: 500;
     color: $color2;
+  }
+  @media all and (min-width: $screen-md) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.01px;
   }
 }
 

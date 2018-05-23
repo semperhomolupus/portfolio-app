@@ -1,5 +1,6 @@
 .footer {
   display: block;
+  position: relative;
   font-family: $font-basic;
   text-align: center;
 }
@@ -111,14 +112,10 @@
     margin-right: 10px;
   }
   @media (min-width: $screen-md) {
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
+    margin-right: 20px;
   }
   @media (min-width: $screen-lg) {
-    &:not(:last-child) {
-      margin-right: 40px;
-    }
+    margin-right: 40px;
   }
 }
 

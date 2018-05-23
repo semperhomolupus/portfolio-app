@@ -12,6 +12,12 @@
   font-weight: 500;
   line-height: 27.92px;
   text-align: center;
+  @media (min-width: $screen-md) {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+  }
 }
 
 .skills__list {
@@ -21,6 +27,9 @@
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  @media (min-width: $screen-md) {
+    justify-content: flex-start;
+  }
 }
 
 .skills__item {
