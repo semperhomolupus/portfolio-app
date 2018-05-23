@@ -1,9 +1,11 @@
 .blog {
   display: block;
   min-width: 320px;
-  .page-text {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  position: relative;
+  @media (min-width: $screen-md) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -20,6 +22,15 @@
     box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
     transform: translateX(0%);
   }
+  @media (min-width: $screen-md) {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    width: 310px;
+    transform: translateX(0%);
+    left: 50%;
+    margin-left: -550px;
+  }
 }
 
 .blog-swipe__show-btn {
@@ -34,6 +45,9 @@
   box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
   background-color: $color2;
   border-radius: 50%;
+  @media (min-width: $screen-md) {
+    display: none;
+  }
 }
 
 .blog-swipe__nav {
@@ -45,24 +59,46 @@
   padding-top: 150px;
   background-color: $color2;
   font-family: $font-basic;
+  @media (min-width: $screen-md) {
+    background: none;
+    padding-top: 85px;
+  }
 }
 
 .blog-swipe__nav-item {
   display: block;
   margin-bottom: 35px;
-  padding-right: 25px;
 }
 
 .blog-swipe__nav-link {
   display: block;
+  padding-right: 25px;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   color: $white;
   text-decoration: none;
   text-align: right;
+  transition: 0.2s;
   &--active {
     font-weight: 700;
+  }
+  &:active,
+  &:focus {
+    color: $white;
+  }
+  @media (min-width: $screen-md) {
+    color: $color6;
+    border-right: 3px solid transparent;
+    &:active,
+    &:focus {
+      color: $color6;
+    }
+    &--active,
+    &:hover {
+      color: $color2;
+      border-right: 3px solid $color2;
+    }
   }
 }
 
@@ -70,6 +106,24 @@
   display: block;
   padding-left: 15px;
   padding-right: 25px;
+  .page-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  @media (min-width: $screen-sm) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media (min-width: $screen-md) {
+    display: inline-block;
+    vertical-align: top;
+    width: 1100px;
+    padding-left: 400px;
+  }
+  @media (min-width: $screen-lg) {
+    width: 1500px;
+    padding-left: 600px;
+  }
 }
 
 .blog-article {
@@ -78,6 +132,14 @@
   padding-bottom: 10px;
   &:not(:last-child) {
     border-bottom: 4px solid rgba($bg-color4, 0.07);
+  }
+  @media (min-width: $screen-sm) {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  @media (min-width: $screen-md) {
+    padding-top: 70px;
+    padding-bottom: 60px;
   }
 }
 
