@@ -1,0 +1,13 @@
+header.header
+  .header__top
+    .header__socials
+      include socials
+      +socials("socials--white")
+    button(type="button").header__burger#js-header-burger
+      +svg("hamburger")
+  .header__menu
+    include burger-menu
+  .header__author
+    include author
+  a(href="#").header__read-more
+    +svg("arrow_down")

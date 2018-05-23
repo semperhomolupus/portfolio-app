@@ -1,12 +1,12 @@
-
-.socials
-  ul.socials__list
-    li.socials__item
-      a(href="#").socials__link.socials__link Вконтакте
-        +svg("vk")
-    li.socials__item
-      a(href="#").socials__link.socials__link GitHub
-        +svg("github")
-    li.socials__item
-      a(href="#").socials__link.socials__link LinkedIn
-        +svg("in")
+mixin socials(addClass)
+  div.socials(class= addClass)
+    ul.socials__list
+      li.socials__item
+        a(href="http://vk.com/write247324196").socials__link.socials__link Вконтакте
+          +svg("vk")
+      li.socials__item
+        a(href="https://github.com/semperhomolupus").socials__link.socials__link GitHub
+          +svg("github")
+      li.socials__item
+        a(href="https://www.linkedin.com/in/egor-dyachenko/").socials__link.socials__link LinkedIn
+          +svg("in")

@@ -1,7 +1,5 @@
 // Индивидуальные базовые стили для конкретного проекта в соответствии
 // с его UI-китом.
-// 
-// Пример
 .button {
   padding: 15px;
   color: $white;
@@ -54,6 +52,7 @@
   font-weight: 400;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
   &--white-underline {
     position: relative;
     padding-bottom: 20px;
@@ -68,7 +67,7 @@
       width: 90px;
       height: 3px;
       margin-left: -45px;
-      background-color: #ffffff;
+      background-color: $white;
     }
   }
   @media all and (min-width: $screen-sm) {
@@ -78,6 +77,118 @@
     &--white-underline {
       padding-bottom: 25px;
     }
+  }
+}
+
+.page-maintitle {
+  display: block;
+  color: $color4;
+  font-family: $font1;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  &--black-underline {
+    position: relative;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 90px;
+      height: 3px;
+      margin-left: -45px;
+      background-color: $color4;
+    }
+  }
+  @media all and (min-width: $screen-sm) {
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 52px;
+    text-transform: uppercase;
+    letter-spacing: 1.22px;
+    &--black-underline {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+  }
+  @media all and (min-width: $screen-md) {
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 66px;
+    text-transform: uppercase;
+    letter-spacing: 1.57px;
+  }
+}
+
+.page-subtitle {
+  display: block;
+  color: $color6;
+  font-family: $font1;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  &--black-underline {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 56px;
+      height: 3px;
+      margin-left: -28px;
+      background-color: $color3;
+    }
+  }
+  @media all and (min-width: $screen-sm) {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    &--black-underline {
+      &::after {
+        width: 90px;
+        margin-left: -45px;
+      }
+    }
+  }
+  @media all and (min-width: $screen-md) {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 41.05px;
+    text-transform: uppercase;
+  }
+}
+
+.page-text {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: $color6;
+  font-family: $font-basic;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    color: $color2;
+  }
+  @media all and (min-width: $screen-md) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.01px;
   }
 }
 
