@@ -1,1 +1,96 @@
-.about {}
+.about {
+  display: block;
+}
+
+.about__info {
+  display: block;
+  background-color: $bg-color2;
+  margin-top: -30vh;
+  padding-top: 30vh;
+}
+
+.about__title {
+  display: block;
+}
+
+.about__content {
+  display: block;
+}
+
+.about__photo {
+  display: block;
+}
+
+.about__subtitle {
+  display: block;
+}
+
+.about__skills {
+  display: block;
+  padding-bottom: 30px;
+  background-color: $bg-color3;
+}
+
+.about__map {
+  display: block;
+  height: 860px;
+  background-image: url(../img/green-map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about__contacts {
+  display: block;
+  padding: 1px 30px;
+  background-color: rgba($bg-color1, 0.85);
+}
+
+.about__contacts-title {
+  color: $color6;
+}
+
+.about__contacts-list {
+  display: block;
+}
+
+.about__contacts-item {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.about__contacts-link {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  color: rgba($color7, 0.8);
+  font-family: $font-basic;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  .svg-sprite {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    fill: $color1;
+    &-skype {
+      width: 24px;
+      height: 24px;
+    }
+    &-envelope {
+      width: 23px;
+      height: 16px;
+    }
+    &-phone {
+      width: 17px;
+      height: 20px;
+    }
+    &-map_marker {
+      width: 16px;
+      height: 21px;
+    }
+  }
+}

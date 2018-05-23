@@ -1,0 +1,122 @@
+.skill {
+  display: block;
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.skill__svg {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+  &--5 .skill__svg-front {
+    stroke-dasharray: 13 255;
+    stroke: $svg-color1;
+  }
+  &--10 .skill__svg-front {
+    stroke-dasharray: 27 255;
+    stroke: $svg-color1;
+  }
+  &--15 .skill__svg-front {
+    stroke-dasharray: 40 255;
+    stroke: $svg-color1;
+  }
+  &--20 .skill__svg-front {
+    stroke-dasharray: 54 255;
+    stroke: $svg-color2;
+  }
+  &--25 .skill__svg-front {
+    stroke-dasharray: 68 255;
+    stroke: $svg-color2;
+  }
+  &--30 .skill__svg-front {
+    stroke-dasharray: 81 255;
+    stroke: $svg-color3;
+  }
+  &--35 .skill__svg-front {
+    stroke-dasharray: 95 255;
+    stroke: $svg-color3;
+  }
+  &--40 .skill__svg-front {
+    stroke-dasharray: 108 255;
+    stroke: $svg-color3;
+  }
+  &--45 .skill__svg-front {
+    stroke-dasharray: 122 255;
+    stroke: $svg-color3;
+  }
+  &--50 .skill__svg-front {
+    stroke-dasharray: 135 255;
+    stroke: $svg-color4;
+  }
+  &--55 .skill__svg-front {
+    stroke-dasharray: 148 255;
+    stroke: $svg-color4;
+  }
+  &--60 .skill__svg-front {
+    stroke-dasharray: 162 255;
+    stroke: $svg-color4;
+  }
+  &--65 .skill__svg-front {
+    stroke-dasharray: 176 255;
+    stroke: $svg-color4;
+  }
+  &--70 .skill__svg-front {
+    stroke-dasharray: 190 255;
+    stroke: $svg-color4;
+  }
+  &--75 .skill__svg-front {
+    stroke-dasharray: 204 255;
+    stroke: $svg-color4;
+  }
+  &--80 .skill__svg-front {
+    stroke-dasharray: 218 255;
+    stroke: $svg-color5;
+  }
+  &--85 .skill__svg-front {
+    stroke-dasharray: 232 255;
+    stroke: $svg-color5;
+  }
+  &--90 .skill__svg-front {
+    stroke-dasharray: 246 255;
+    stroke: $svg-color5;
+  }
+  &--95 .skill__svg-front {
+    stroke-dasharray: 258 255;
+    stroke: $svg-color5;
+  }
+  &--100 .skill__svg-front {
+    stroke-dasharray: 270 255;
+    stroke: $svg-color6;
+  }
+}
+
+.skill__svg-back {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 20px;
+}
+
+.skill__svg-front {
+  fill: none;
+  stroke: $color1;
+  stroke-width: 20px;
+  stroke-dasharray: 270 255;
+}
+
+.skill__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $color2;
+  font-family: $font-basic;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 29.43px;
+}

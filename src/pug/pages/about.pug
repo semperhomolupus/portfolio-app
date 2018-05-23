@@ -8,15 +8,31 @@ block content
 
   .about
     .about__info
-      h2.page-title.about__title
+      h2.page-maintitle.page-maintitle--black-underline.about__title Обо мне
       .about__content
         img(src="../img/content/author.jpeg", alt="Егор Дьяченко").about__photo
-        h3.page-subtitle.about__subtitle
-        p.about__text
-        p.about__text
+        .container 
+          h3.page-subtitle.page-subtitle--black-underline.about__subtitle Кто я
+          p.page-text Frontend-developer из волшебного Санкт-Петербурга. Успел поработать в двух замечательных компаниях, получить опыт на фрилансе и пройти тяжелый путь от первого Hello World до создания современных сайтов и приложений.
+          p.page-text С радостью продемонстрирую готовые проекты и отточенные навыки, для более подробной информации вы можете связаться со мной по почте <a href="mailto:whitebestnik@yandex.ru">whitebestnik@yandex.ru</a> или в скайпе - <a href="skype:semperhomolupus">semperhomolupus</a>. Best regards!
     .about__skills
-      h3.page-subtitle.about__subtitle
-      p.about__text
-      include ../components/skills
+      .container 
+        h3.page-subtitle.page-subtitle--black-underline.about__subtitle Как я могу вам помочь
+        p.page-text Ниже привден краткий список моих ключевых навыков, основанный на субъективной оценке. Более подробную инорфмацию о моих достижениях вы можете почитать в <a href="blog.html">блоге</a> и разделе дополнительной информации к проектам из <a href="works.html">портфолио</a>. 
+        include ../components/skills
     .about__map
       .about__contacts
+        h3.page-maintitle.page-maintitle--black-underline.about__contacts-title Контакты
+        ul.about__contacts-list
+          li.about__contacts-item
+            a(href="skype:semperhomolupus").about__contacts-link semperhomolupus
+              +svg("skype")
+          li.about__contacts-item
+            a(href="mailto:whitebestnik@yandex.ru").about__contacts-link whitebestnik@yandex.ru
+              +svg("envelope")
+          li.about__contacts-item
+            span.about__contacts-link it's a secret
+              +svg("phone")
+          li.about__contacts-item
+            span.about__contacts-link Saint-Petersburg, Russia
+              +svg("map_marker")

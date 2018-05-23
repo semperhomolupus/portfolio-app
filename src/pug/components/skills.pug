@@ -1,9 +1,30 @@
-.skills
-  h4.page-subtitle-small.skills-title
-  ul.skills__list
-  
-  h4.page-subtitle-small.skills-title
-  ul.skills__list
+include skill
 
-  h4.page-subtitle-small.skills-title
+.skills
+  h4.page-subtitle-small.skills-title Верстка
   ul.skills__list
+    li.skills__item
+      +skill("HTML5", "85")
+    li.skills__item
+      +skill("CSS3", "80")
+    li.skills__item
+      +skill("Bootstrap", "70")
+  h4.page-subtitle-small.skills-title JavaScript
+  ul.skills__list
+    li.skills__item
+      +skill("Vue", "70")
+    li.skills__item
+      +skill("React", "60")
+    li.skills__item
+      +skill("NodeJS", "50")
+    li.skills__item
+      +skill("jQuery", "85")
+  h4.page-subtitle-small.skills-title WorkFlow
+  ul.skills__list
+    li.skills__item
+      +skill("Git", "75")
+    li.skills__item
+      +skill("Webpack", "70")
+    li.skills__item
+      +skill("Gulp", "90")
+  
