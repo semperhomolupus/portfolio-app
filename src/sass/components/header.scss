@@ -1,3 +1,12 @@
+@keyframes readMore {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -11,6 +20,17 @@
   background-image: url(../img/welcome-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
+  @media(min-width: $screen-sm) {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+    padding: 30px;
+  }
+  @media(min-width: $screen-md) {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 83%, 50% 100%, 0% 83%);
+  }
+  @media(min-width: $screen-lg) {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+  }
 }
 
 .header__top {
@@ -33,79 +53,14 @@
   width: 26px;
   height: 23px;
   fill: $white;
+  @media(min-width: $screen-sm) {
+    width: 40px;
+    height: 35px;
+  }
 }
 
 .header__menu {
   display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba($color5, 0.87);
-  padding: 9px;
-}
-
-.header__menu-close {
-  display: block;
-  width: 27px;
-  height: 27px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 25px;
-    position: absolute;
-    top: 10px;
-    left: 0px;
-    background-color: $white;
-  }
-  &::before {
-    transform: rotate(45deg);
-  }
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
-.header__menu-list {
-  display: block;
-  margin-top: 115px;
-  text-align: center;
-}
-
-.header__menu-item {
-  display: block;
-}
-
-.header__menu-link {
-  display: block;
-  position: relative;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-  color: $white;
-  text-decoration: none;
-  &:hover,
-  &:active,
-  &:focus,
-  &--active {
-    color: $white;
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 90px;
-      height: 3px;
-      margin-left: -45px;
-      background-color: #ffffff;
-    }
-  }
 }
 
 .header__author {
@@ -117,6 +72,7 @@
   display: block;
   margin-bottom: 45px;
   fill: rgba($white, 0.8);
+  animation: readMore 1.5s infinite ease-in-out alternate-reverse;
 }
 
 .svg-sprite-arrow_down {
