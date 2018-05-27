@@ -2,16 +2,17 @@
   section.works-slider__active
     img(src="img/content/portfolio.png", alt="Portfolio").works-slider__active-img
   section.works-slider__info
-    h3.page-subtitle.page-subtitle--black-underline.works-slider__title Сайт школы онлайн Образования
-    p.page-text.works-slider__descr HTML , CSS, JAVASCRIPT
-    a(href="#" target="_blank").button.works-slider__read-more Посмотреть сайт
-      +svg("link")
+    .works-slider__info-content
+      h3.page-subtitle.page-subtitle--black-underline.works-slider__title Сайт школы онлайн Образования
+      p.page-text.works-slider__descr HTML , CSS, JAVASCRIPT
+      a(href="#" target="_blank").button.works-slider__read-more Посмотреть сайт
+        +svg("link")
   section.works-slider__slides
-    .works-slider__before
-      img(src="img/content/portfolio.png", alt="Portfolio").works-slider__before-img
-      button(type="button").works-slider__down-btn
+    .works-slider__slide.works-slider__slide--before
+      img(src="img/content/portfolio.png", alt="Portfolio").works-slider__slide-img
+      button(type="button").works-slider__slide-btn
         +svg("portf_arrow_down")
-    .works-slider__after
-      img(src="img/content/portfolio.png", alt="Portfolio").works-slider__after-img
-      button(type="button").works-slider__up-btn
+    .works-slider__slide.works-slider__slide--after
+      img(src="img/content/portfolio.png", alt="Portfolio").works-slider__slide-img
+      button(type="button").works-slider__slide-btn
         +svg("portf_arrow_up")
