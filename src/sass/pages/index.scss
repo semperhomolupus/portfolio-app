@@ -26,6 +26,14 @@
   }
 }
 
+.welcome__auth-btn {
+  display: inline-block;
+  vertical-align: top;
+  &--hidden {
+    visibility: hidden;
+  }
+}
+
 .welcome__footer {
   display: block;
   margin-top: 40px;
