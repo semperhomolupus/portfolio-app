@@ -3,9 +3,9 @@ header.header
     .header__socials
       include socials
       +socials("socials--white")
-    button(type="button").header__burger#js-header-burger
+    button(type="button").header__burger#jsHeaderBurger
       +svg("hamburger")
-  .header__menu
+  .header__menu.header__menu--hidden#jsBurgerMenu
     include burger-menu
   .header__author
     include author

@@ -60,7 +60,11 @@
 }
 
 .header__menu {
-  display: none;
+  display: block;
+  &--hidden {
+    display: none;
+    display: none;
+  }
 }
 
 .header__author {
