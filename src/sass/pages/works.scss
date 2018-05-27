@@ -1,0 +1,338 @@
+@keyframes returnUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.works {
+  display: block;
+  font-family: $font-basic;
+}
+
+.works__header {
+  display: block;
+  margin-top: -30vh;
+  padding-top: 30vh;
+  padding-bottom: 15px;
+  background-color: $bg-color5;
+}
+
+.works__title {
+  display: block;
+  max-width: 220px;
+  margin: 0 auto;
+  margin-top: 15px;
+  position: relative;
+  color: $color4;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 41.93px;
+  text-transform: uppercase;
+  @media (min-width: $screen-sm) {
+    max-width: 350px;
+  }
+  @media (min-width: $screen-md) {
+    max-width: 450px;
+  }
+}
+
+.works__header-title {
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin-top: 15px;
+  @media (min-width: $screen-sm) {
+    margin-top: 45px;
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 400;
+  }
+  @media (min-width: $screen-md) {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 66px;
+  }
+}
+
+.svg-sprite-works_header {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  left: 50%;
+  margin-left: -125px;
+  width: 253px;
+  height: 83px;
+  fill: #f0f4e2;
+  @media (min-width: $screen-sm) {
+    width: 404px;
+    height: 133px;
+    top: -50px;
+    margin-left: -202px;
+  }
+  @media (min-width: $screen-lg) {
+    width: 506px;
+    height: 165px;
+    top: -60px;
+    margin-left: -253px;
+  }
+}
+
+.works__slider {
+  display: block;
+}
+
+.works__reviews {
+  display: block;
+  height: 1490px;
+  margin-bottom: -349px;
+  background-image: url(../img/works-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  @media (min-width: $screen-sm) {
+    height: 1300px;
+    margin-bottom: -289px;
+    padding-top: 30px;
+    background-color: $bg-color3;
+  }
+  @media (min-width: $screen-md) {
+    height: 1235px;
+    margin-bottom: -199px;
+    background-position: center 50px;
+  }
+  @media (min-width: $screen-lg) {
+    padding-top: 50px;
+    height: 1285px;
+    margin-bottom: -199px;
+    background-position: center 80px;
+  }
+}
+
+.works__reviews-title {
+  display: block;
+  position: relative;
+  z-index: 2;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 41.93px;
+  text-transform: uppercase;
+  .svg-sprite-about_header {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    left: -13px;
+    width: 249px;
+    height: 88px;
+    fill: #f4f9ea;
+  }
+  @media (min-width: $screen-sm) {
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 52px;
+    .svg-sprite-about_header {
+      width: 400px;
+      height: 140px;
+      left: 50%;
+      top: -20px;
+      margin-left: -200px;
+      fill: #eaf0dd;
+    }
+  }
+  @media (min-width: $screen-md) {
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 66px;
+  }
+  @media (min-width: $screen-lg) {
+    .svg-sprite-about_header {
+      width: 500px;
+      height: 175px;
+      top: -30px;
+      margin-left: -250px;
+    }
+  }
+}
+
+.works__reviews-list {
+  display: block;
+  margin-top: 23px;
+  @media (min-width: $screen-sm) {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+.works__review {
+  display: block;
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  color: $color6;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  text-align: center;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    @include sprite($sprite-quotes);
+  }
+  @media (min-width: $screen-sm) {
+    display: inline-block;
+    vertical-align: top;
+    width: 340px;
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    &::before {
+      top: 60px;
+    }
+  }
+  @media (min-width: $screen-md) {
+    width: 390px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.works__review-img {
+  display: inline-block;
+  vertical-align: top;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  @media (min-width: $screen-sm) {
+    margin-bottom: 20px;
+  }
+}
+
+.works__review-text {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.works__review-author {
+  display: block;
+  color: $color2;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+
+.works__review-status {
+  display: block;
+  text-align: center;
+}
+
+.works__contacts {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 25px 20px 0 20px;
+  border-radius: 5px;
+  @media (min-width: $screen-sm) {
+    width: 350px;
+    background-color: rgba($bg-color7, 0.6);
+  }
+}
+
+.works__contacts-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $color6;
+  font-family: $font1;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 27.83px;
+  text-transform: uppercase;
+  @media (min-width: $screen-sm) {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 41px;
+  }
+  @media (min-width: $screen-md) {
+    margin-bottom: 25px;
+  }
+}
+
+.works__contacts-form {
+  display: block;
+}
+
+.works__contacts-input {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  @media (min-width: $screen-md) {
+    font-size: 16px;
+  }
+}
+
+.works__contacts-textarea {
+  display: block;
+  height: 140px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 25px;
+  color: $color6;
+  font-size: 14px;
+  @media (min-width: $screen-md) {
+    font-size: 16px;
+  }
+}
+
+.works__contacts-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.works__contacts-submit {
+  display: block;
+  flex-grow: 1;
+  border-right: 2px solid #dee3e7;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.works__contacts-reset {
+  display: block;
+  flex-grow: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.works__return-up {
+  display: block;
+  width: 26px;
+  height: 16px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  fill: $white;
+  animation: returnUp 1.5s infinite ease-in-out alternate-reverse;
+  .svg-sprite-arrow_down {
+    width: 26px;
+    transform: rotate(180deg);
+  }
+}

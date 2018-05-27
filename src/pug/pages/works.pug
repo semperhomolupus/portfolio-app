@@ -1,0 +1,39 @@
+extends ../template/_layout
+
+block vars
+  - var title = "Мои работы";
+
+
+block content
+
+  .works
+    section.works__header
+      h2.page-maintitle.page-maintitle--black-underline.works__title.works__header-title  Мои работы
+        +svg("works_header")
+    section.works__slider
+      include ../components/works-slider
+    section.works__reviews
+      h3.page-subtitle.page-subtitle--black-underline.works__title.works__reviews-title Что обо мне говорят
+        +svg("about_header")
+      ul.works__reviews-list
+        li.works__review
+          img(src="img/content/review-author-1.jpg", width="51" height="51" alt="Author").works__review-img
+          p.works__review-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, accusamus quae tempore dicta cum voluptatem sequi. Perferendis nesciunt ea assumenda!
+          i.works__review-author Павел Хвостов
+          i.works__review-status — SPB-Outdoor
+        li.works__review
+          img(src="img/content/review-author-2.jpg", width="51" height="51" alt="Author").works__review-img
+          p.works__review-text Спасибо за качественно и быстро проведенные доработки сайта, консультацию по проведению адаптации сайта под iPhone. 
+          i.works__review-author Светлана Сафонова
+          i.works__review-status — legocity.club
+      .works__contacts
+        h3.page-subtitle.page-subtitle--black-underline.works__contacts-title Связаться со мной
+        form(action="#").works__contacts-form
+          input(type="text" name="name" placeholder="Имя").input.works__contacts-input
+          input(type="email" name="email" placeholder="Email").input.works__contacts-input
+          textarea(name="text", cols="20", rows="5").textarea.works__contacts-textarea Ваше сообщение
+          .works__contacts-buttons
+            button(type="submit").button.works__contacts-submit Отправить
+            button(type="reset").button.works__contacts-reset Очистить
+      a(href="#").works__return-up
+        +svg("arrow_down")
