@@ -3,7 +3,6 @@
   width: 300px;
   position: relative;
   text-align: center;
-  background-color: rgba(#122620, 0.6);
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   overflow: hidden;
@@ -20,6 +19,7 @@
 .person-card__side {
   display: block;
   padding-top: 35px;
+  background-color: rgba(#122620, 0.6);
   transition: 0.3s;
   transform: rotateY(0);
   &--hidden {
