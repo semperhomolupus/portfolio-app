@@ -33,3 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
     index.script();
   }
 });
+
+
+window.onload = function() {
+  const welcomePage = document.querySelector(".welcome");
+  const preloader = document.querySelector(".preloader");
+  welcomePage.style.visibility = "visible";
+  preloader.style.display = "none";
+};

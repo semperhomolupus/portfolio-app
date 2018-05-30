@@ -6,15 +6,22 @@ html(lang="en")
   body
     .wrapper
       div.content
-
-        .welcome
-            .welcome__auth
-              button(type="button").button.button--round-transparent.welcome__auth-btn#jsAuthBbtn Авторизоваться
-            include ../components/person-card
-            .welcome__footer 
-              span.welcome__footer-name © Егор Дьяченко 
-              span.welcome__footer-copyright Макет предоставлен LoftSchool | 2018
+        .preloader
+          .preloader__svg
+            include ../../img/svg/forest.svg
+        .welcome(style="visibility: hidden;")
+          canvas.welcome__canvas
+          .welcome__auth
+            button(type="button").button.button--round-transparent.welcome__auth-btn#jsAuthBbtn Авторизоваться
+          include ../components/person-card
+          .welcome__footer 
+            span.welcome__footer-name © Егор Дьяченко 
+            span.welcome__footer-copyright Макет предоставлен LoftSchool | 2018
     .scripts(style="display: none")
       script(src="js/app.min.js")
+      script(src="js/water.js")
     .svg-sprite(style="display: none") 
       include ../../../build/img/symbol/svg-sprite.svg
+
+    
+      

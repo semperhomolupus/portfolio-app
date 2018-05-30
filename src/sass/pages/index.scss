@@ -7,12 +7,23 @@
   height: 100%;
   width: 100%;
   padding: 10px;
-  background-image: url("../img/welcome-bg.jpg");
+  background-image: url("../img/water.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   @media all and (min-width: $screen-sm) {
     padding: 20px;
   }
+}
+
+.welcome__canvas {
+  // width: 100vw !important;
+  min-height: 100% !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 .welcome__auth {
@@ -29,6 +40,7 @@
 .welcome__auth-btn {
   display: inline-block;
   vertical-align: top;
+  position: relative;
   &--hidden {
     visibility: hidden;
   }
@@ -63,4 +75,31 @@
 .welcome__footer-copyright {
   display: inline-block;
   vertical-align: top;
+  position: relative;
+}
+
+.preloader {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #5f8c51;
+  background-image: url("../img/preloader-bg.jpg");
+  z-index: 900;
+}
+
+.preloader__svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.svg-sprite-forest {}
+
+.svg-text {
+  stroke: #fff;
+  fill: none;
 }
