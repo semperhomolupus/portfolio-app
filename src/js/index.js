@@ -34,10 +34,11 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-
 window.onload = function() {
   const welcomePage = document.querySelector(".welcome");
-  const preloader = document.querySelector(".preloader");
-  welcomePage.style.visibility = "visible";
-  preloader.style.display = "none";
+  if (welcomePage) {
+    const preloader = document.querySelector(".preloader");
+    welcomePage.style.visibility = "visible";
+    preloader.style.display = "none";
+  }
 };

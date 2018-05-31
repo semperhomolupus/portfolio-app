@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
       let slidesLenght = slidesList.length - 1;
 
       portfolio.sliderInfoUpdate = function(number) {
-        console.log(slidesList[number].title);
         sliderTitle.innerText = slidesList[number].title;
         sliderDescr.innerText = slidesList[number].description;
         sliderLink.setAttribute("href", slidesList[afterSlideNumber].link);
