@@ -5,10 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
     menuScript.scripts = function() {
       const burgerMenu = document.getElementById("jsBurgerMenu");
       const btnCloseBurgerMenu = document.getElementById("jsBurgerMenuClose");
+      const wrapper = document.querySelector(".wrapper");
+
       menuScript.showBurgerMenu = function() {
         burgerBtn.addEventListener("click", function(e) {
           e.preventDefault();
           burgerMenu.classList.toggle("header__menu--hidden");
+          wrapper.classList.toggle("wrapper--overflow");
         });
       };
 
@@ -16,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         btnCloseBurgerMenu.addEventListener("click", function(e) {
           e.preventDefault();
           burgerMenu.classList.toggle("header__menu--hidden");
+          wrapper.classList.toggle("wrapper--overflow");
         });
       };
 

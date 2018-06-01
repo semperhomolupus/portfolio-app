@@ -8,10 +8,15 @@
 }
 
 .header {
+  display: block;
+}
+
+.header__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   position: relative;
   height: 100%;
   min-height: 100vh;
@@ -62,7 +67,6 @@
 .header__menu {
   display: block;
   &--hidden {
-    display: none;
     display: none;
   }
 }
