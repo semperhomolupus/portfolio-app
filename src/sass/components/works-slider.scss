@@ -151,6 +151,8 @@
 
 .works-slider__descr {
   display: block;
+  padding-left: 15%;
+  padding-right: 15%;
   color: $color2;
   font-weight: 500;
   @media (min-width: $screen-sm) {
