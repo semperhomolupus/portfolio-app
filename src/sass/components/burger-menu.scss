@@ -1,12 +1,14 @@
 .burger-menu {
+  display: block;
+  padding: 9px;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 20;
-  background-color: rgba($color5, 0.87);
-  padding: 9px;
+  background-color: rgba($color5, 0.92);
+  transition: 0.2s;
 }
 
 .burger-menu__close {

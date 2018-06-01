@@ -1,8 +1,8 @@
 .person-card {
   display: block;
   width: 300px;
+  position: relative;
   text-align: center;
-  background-color: rgba(#122620, 0.6);
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   overflow: hidden;
@@ -19,9 +19,20 @@
 .person-card__side {
   display: block;
   padding-top: 35px;
+  background-color: rgba(#122620, 0.6);
+  transition: 0.3s;
+  transform: rotateY(0);
   &--hidden {
     display: none;
   }
+}
+
+.jsToggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
 }
 
 .person-card__author {
@@ -114,6 +125,7 @@
 .person-card__alive {
   display: block;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .person-card__robot {
@@ -151,6 +163,7 @@
   display: inline-block;
   vertical-align: top;
   position: relative;
+  cursor: pointer;
 }
 
 .person-card__robot-no {
@@ -158,6 +171,7 @@
   vertical-align: top;
   position: relative;
   margin-left: 40px;
+  cursor: pointer;
 }
 
 .person-card__hidden-radio {

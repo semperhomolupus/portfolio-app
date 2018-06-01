@@ -6,6 +6,7 @@ html(lang="en")
   include _head
 
   include ../mixins/_svg-sprite
+  
 
   body
 
@@ -19,7 +20,8 @@ html(lang="en")
 
       include ../components/footer
 
-    block scripts
+    .scripts(style="display: none")
+      script(src="js/app.min.js")
 
     // SVG-sprite
     .svg-sprite(style="display: none") 

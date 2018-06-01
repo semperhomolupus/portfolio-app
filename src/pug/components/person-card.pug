@@ -1,5 +1,5 @@
-.person-card
-  .person-card__side
+.person-card#jsPersonCard
+  .person-card__side#jsPersonCardFront
     .person-card__author
       include author
     .person-card__socials
@@ -12,7 +12,7 @@
         a(href="about.html").button.person-card__nav-link Обо мне
       li.person-card__nav-item
         a(href="blog.html").button.person-card__nav-link Блог
-  .person-card__side.person-card__side--hidden
+  .person-card__side#jsPersonCardBack.jsToggle
     b.page-title.page-title--white-underline.person-card__title Авторизуйтесь
     form(action="#" method="POST").person-card__form
       label.person-card__label
@@ -38,5 +38,5 @@
           i.person-card__custom-radio 
           span.person-card__text Не уверен
       .person-card__buttons
-        button(type="reset").button.person-card__reset На главную
+        button(type="reset").button.person-card__reset#jsAuthBtnReturn На главную
         button(type="submit").button.person-card__submit Войти
