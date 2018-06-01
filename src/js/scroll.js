@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const headerScroll = function() {
     const headerScrollButton = document.getElementById("jsHeaderScroll");
     if (headerScrollButton) {
-      let windowHeight = window.innerHeight;
+      const windowHeight = window.innerHeight;
       headerScrollButton.addEventListener("click", function(e) {
         e.preventDefault();
         window.scroll({
@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const toUpScrollBtn = document.getElementById("jsWorksToUpScroll");
     if (toUpScrollBtn) {
       const worksSlider = document.querySelector(".works-slider");
-      let worksSliderPosition = worksSlider.offsetTop;
-      console.log(worksSliderPosition);
+      const worksSliderPosition = worksSlider.offsetTop;
+
       toUpScrollBtn.addEventListener("click", function(e) {
         e.preventDefault();
         window.scroll({

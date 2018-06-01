@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
       portfolio.sliderInfoUpdate = function(number) {
         sliderTitle.innerText = slidesList[number].title;
         sliderDescr.innerText = slidesList[number].description;
-        sliderLink.setAttribute("href", slidesList[afterSlideNumber].link);
+        sliderLink.setAttribute("href", slidesList[number].link);
       };
 
       portfolio.slidesUpdate = function() {
@@ -89,37 +89,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
 var slidesList = [
   {
-    title: "Soulvibes",
+    title: "Лендинг Soulvibes",
     image: "img/content/slide-1.jpg",
-    description: "с медиа-плеером",
-    link: "https://vk.com/semperhomolupus",
+    description: "Лендинг с настоящим с медиа-плеером! Послушайте Skillet, пока изучаете работу :)",
+    link: "https://semperhomolupus.github.io/soulvibes/app/",
   },
 
   {
-    title: "ТИАП ",
+    title: "Портал ТИАП",
     image: "img/content/slide-2.jpg",
-    description: "информационный портал",
-    link: "https://vk.com/semperhomolupus",
+    description: "Транспортно-информационный портал, верстка главной страницы портала.",
+    link: "https://semperhomolupus.github.io/tiap/",
   },
 
   {
-    title: "Lending 3",
+    title: "Сайт компании Panakeia",
     image: "img/content/slide-3.jpg",
-    description: "Описание 3",
-    link: "https://vk.com/semperhomolupus",
+    description: "Отличный ресторан греческой кухни!",
+    link: "https://semperhomolupus.github.io/panakeia/",
   },
 
   {
-    title: "Lending 4",
+    title: "Многостраничный сайт Афродита",
     image: "img/content/slide-4.jpg",
-    description: "Описание 4",
-    link: "https://vk.com/semperhomolupus",
+    description: "Сайт вымышленного фитнес-клуба. Псс, только не говорите им, что их не существует ;)",
+    link: "https://semperhomolupus.github.io/loft-first/",
   },
 
   {
-    title: "Lending 5",
+    title: "Лендинг компании Lorem",
     image: "img/content/slide-5.jpg",
-    description: "Описание 5",
-    tags: "https://vk.com/semperhomolupus",
+    description: "Lorem Ispum - это вам совсем не dolor sit amet!",
+    tags: "https://semperhomolupus.github.io/loremSite/",
   },
 ];
