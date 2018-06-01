@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
       blog.showSwipe = function() {
         blogSwipeBtn.addEventListener("click", function(e) {
           e.preventDefault();
-          blogSwipe.classList.add("blog-swipe--opened");
+          blogSwipe.classList.toggle("blog-swipe--opened");
         });
       };
       blog.showSwipe();

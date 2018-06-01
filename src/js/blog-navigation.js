@@ -5,33 +5,37 @@ document.addEventListener("DOMContentLoaded", function() {
   if (blogPage) {
     const blogSwipe = blogPage.querySelector(".blog-swipe");
     const blogNavigation = blogSwipe.querySelector(".blog-swipe__nav");
+    const blogNavigationLinks = blogNavigation.querySelectorAll(".blog-swipe__nav-link");
     const blogArticles = blogPage.querySelectorAll(".blog-article");
     const windowHeight = window.innerHeight;
 
     blogScript.stickyMenu = function() {
       const windowScrollHeight = window.pageYOffset;
-      const windowScrollOptimalHeight = windowScrollHeight - 150;
 
-      if (windowScrollOptimalHeight >= windowHeight) {
+      if (windowScrollHeight >= windowHeight && windowScrollHeight < document.body.clientHeight - 600) {
         blogSwipe.classList.add("blog-swipe--fixed");
       } else {
         blogSwipe.classList.remove("blog-swipe--fixed");
       }
     };
 
-    blogScript.change = function() {
+    blogScript.getArticlesDistance = function() {
       for (var i = 0; i < blogArticles.length; i++) {
-        // let c = [];
-        // c.push(blogArticles[i].getBoundingClientRect());
-        // let scrolltop = document.body.scrollTop + c.top;
-        // console.log(scrolltop);
+        let c = [];
+        c.push(blogArticles[i].getBoundingClientRect().top);
+        console.log(blogArticles[i].getBoundingClientRect().top);
+
+        if (blogArticles[i].getBoundingClientRect().top <= 0) {
+          blogNavigationLinks[i].classList.add("blog-swipe__nav-link--active");
+        } else {
+          blogNavigationLinks[i].classList.remove("blog-swipe__nav-link--active");
+        }
       }
     };
 
     window.onscroll = function() {
       blogScript.stickyMenu();
+      blogScript.getArticlesDistance();
     };
-
-    blogScript.change();
   }
 });

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
       headerScrollButton.addEventListener("click", function(e) {
         e.preventDefault();
         window.scroll({
-          top: windowHeight,
+          top: windowHeight + 150,
           behavior: "smooth",
         });
       });
